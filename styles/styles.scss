@@ -1,0 +1,192 @@
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 104px;
+    &-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    &__search {
+        background-image: url(../files/images/search-icon.svg);
+        background-position-x: left;
+        background-position-y: center;
+        padding-left: 30px;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: #e5e5e5;
+        color: #a5a5a5;
+        font-size: 18px;
+        margin-left: 34px;
+    }
+    &__logo {
+        width: 136px;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+    
+        &__navigation {
+            display: flex;
+            justify-content: space-between;
+            width: 307px;
+            margin-right: 44px;
+        }
+        &__item {
+            color: #363636;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        &__button-reg {
+            color:#5671F6 ;
+            height: 104px;
+            width: 176px;
+            background-color: #e5e5e5;
+            border: none;
+            font-size: 18px;
+        }
+        &__button-enter {
+            color: #ffff;
+            background-color: #5671F6;
+            height: 104px;
+            width: 151px;
+            border: none;
+            font-size:18px;
+        }
+    }
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: Roboto;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../files/fonts/Roboto-Regular.ttf);
+}
+
+.film {
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 80px;
+    border: solid;
+    border-color: #d4d4d4;
+    border-left: none;
+    border-right: none;
+    padding-left: 153px;
+    height: 699px;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    &__promo {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    &__watch {
+        width:358px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        border-color: #d4d4d4;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-width: 1px;
+        &-text {
+            text-decoration: none;
+            background-image: url(../files/images/play.svg);
+            width: 196px;
+            height: 25px;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #5671F6;
+            padding-left: 25px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+    &__original-name {
+        font-size: 18px;
+        color: #a5a5a5;
+    }
+    &__description {
+        font-size: 14px;
+        width: 514px;
+        margin-top: 32px;
+        line-height:150%;
+    }
+    &__credits {
+        margin-top: 50px;
+    }
+    &__cell {
+        height:26px;
+    }
+    &__rating {
+        margin-top: 40px;
+        display: flex;
+        &-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 28px;
+            justify-content: center;
+            line-height: 19px;
+        }
+    }
+}
+h1 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+.people {
+    margin-top: 70px;
+    margin-left: 153px;
+    &__job {
+        display: flex;
+    }
+    &__actors {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 107px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 35px;
+    }
+    &__link {
+        text-decoration: none;
+        color: #5671F6;
+        margin-left: 21px;
+    }
+    &__original-name {
+        color: #a5a5a5;
+        margin-left: 21px;
+    }
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
